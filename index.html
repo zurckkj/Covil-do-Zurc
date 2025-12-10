@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Covil do Zurc</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            color: white;
+            background: linear-gradient(120deg, #1e1e1e, #111, #7c07ad, #111);
+            background-size: 400% 400%;
+            animation: gradientAnim 12s ease infinite;
+        }
+        @keyframes gradientAnim {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .main-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 40px 0;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            width: 260px;
+            height: 80px;
+            background-color: #333;
+            border-radius: 14px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            gap: 15px;
+            padding: 0 20px;
+        }
+        .box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+            background-color: #7c07ade9;
+        }
+        .box img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            box-shadow: 0 0 8px rgba(124,7,173,0.8);
+        }
+        a {
+            font-size: 1.5rem;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-container {
+            width: 100%;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .contact-box {
+            text-align: center;
+            cursor: pointer;
+            background: linear-gradient(45deg, #7c07ad, #a64bff, #7c07ad);
+            background-size: 300% 300%;
+            padding: 25px 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: 0.5s ease-in-out;
+            animation: gradientButton 6s ease infinite;
+        }
+        @keyframes gradientButton {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .contact-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+        }
+        .contact-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        .contact-subtitle {
+            font-size: 1.2rem;
+            margin-top: 5px;
+            color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="main-container">
+
+        <div class="box">
+            <img src="imagens/WhatsApp Image 2025-12-10 at 17.48.19.jpeg" alt="LivePix" />
+            <a href="https://livepix.gg/zurckkj">LivePix</a>
+        </div>
+
+        <div class="box">
+            <img src="imagens/WhatsApp Image 2025-12-10 at 17.48.19.jpeg" alt="Discord" />
+            <a href="https://discord.com/invite/fTJXz5VSH">Discord</a>
+        </div>
+
+        <div class="box">
+            <img src="imagens/WhatsApp Image 2025-12-10 at 17.48.19.jpeg" alt="YouTube" />
+            <a href="https://www.youtube.com/@Zurckkj">YouTube</a>
+        </div>
+
+        <div class="box">
+            <img src="imagens/WhatsApp Image 2025-12-10 at 17.48.19.jpeg" alt="Twitch" />
+            <a href="https://www.twitch.tv/zurckkj">Twitch</a>
+        </div>
+
+        <div class="box">
+            <img src="imagens/WhatsApp Image 2025-12-10 at 17.48.19.jpeg" alt="Server PV" />
+            <a href="https://www.roblox.com/pt/share-links?code=1f1f84a7e542ab439e26aa7874fa4c06&type=Server&pid=Server">Server PV</a>
+        </div>
+
+    </main>
+
+    <section class="contact-container">
+        <div class="contact-box" onclick="window.location.href='https://mail.google.com/mail/?view=cm&fs=1&to=zurckkj@gmail.com';">
+            <h2 class="contact-title">Contato Profissional</h2>
+            <p class="contact-subtitle">Clique aqui para enviar um e-mail</p>
+        </div>
+    </section>
+
+</body>
+</html>
